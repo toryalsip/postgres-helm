@@ -1,0 +1,6 @@
+apiVersion: v2
+name: postgres
+description: My own custom helm chart for deploying postgres
+type: application
+version: 0.1.0
+appVersion: "15.2"
