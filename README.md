@@ -9,7 +9,7 @@ Run `./scripts/setup-scret.sh`, which will ask for the following information. If
 
 ## 2. Deploying the chart
 ```
-helm upgrade -i postgres postgres-chart/ --values postgres-chart/values.yaml -n postgres
+helm upgrade -i postgres postgres-chart/ -n postgres
 ```
 
 ## References
