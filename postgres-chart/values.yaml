@@ -55,7 +55,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-persistentVolume:
-  storage: 10Gi
-  path: /mnt/data

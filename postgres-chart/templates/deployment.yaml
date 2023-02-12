@@ -19,8 +19,6 @@ spec:
       labels:
         {{- include "chart.selectorLabels" . | nindent 8 }}
     spec:
-      imagePullSecrets:
-        - {{ .Values.postgresSecretName }}
       envFrom:
         # Works very similar to referencing a configMap
         - secretRef:
@@ -59,7 +57,3 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      volumes:
-        - name: postgredb
-          persistentVolumeClaim:
-            claimName: {{ include "chart.fullname" . }}-pv-claim
